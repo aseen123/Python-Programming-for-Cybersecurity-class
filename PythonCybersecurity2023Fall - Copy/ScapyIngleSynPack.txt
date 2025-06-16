@@ -1,0 +1,395 @@
+Microsoft Windows [Version 10.0.22621.2428]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\eniko>scapy
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:673: ImportWarning: _SixMetaPathImporter.exec_module() not found; fallingback to load_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\layers\ipsec.py:469: CryptographyDeprecationWarning: Blowfish has been deprecated
+  cipher=algorithms.Blowfish,
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\layers\ipsec.py:483: CryptographyDeprecationWarning: CAST5 has been deprecated
+  cipher=algorithms.CAST5,
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:673: ImportWarning: _SixMetaPathImporter.exec_module() not found; fallingback to load_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+
+                     aSPY//YASa
+             apyyyyCY//////////YCa       |
+            sY//////YSpcs  scpCY//Pp     | Welcome to Scapy
+ ayp ayyyyyyySCP//Pp           syY//C    | Version 2.4.3
+ AYAsAYYYYYYYY///Ps              cY//S   |
+         pCCCCY//p          cSSps y//Y   | https://github.com/secdev/scapy
+         SPPPP///a          pP///AC//Y   |
+              A//A            cyP////C   | Have fun!
+              p///Ac            sC///a   |
+              P////YCpc           A//A   | Craft packets like I craft my beer.
+       scccccp///pSP///p          p//Y   |               -- Jean De Clerck
+      sY/////////y  caa           S//P   |
+       cayCyayP//Ya              pY/Ya
+        sY/PsY////YCc          aC//Yp
+         sc  sccaCY//PCypaapyCP//YSs
+                  spCPY//////YPSps
+                       ccaacs
+                                       using IPython 8.15.0
+<frozen importlib._bootstrap>:1047: ImportWarning: _SixMetaPathImporter.find_spec() not found; falling back to find_module()
+>>> packet_list=sniff(count=20)
+>>>
+>>> packet_list.show()
+0000 Ether / IPv6 / TCP 2a00:1450:4003:80e::2003:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53179 PA / Raw
+0001 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53179 > 2a00:1450:4003:80e::2003:https FA
+0002 Ether / IPv6 / TCP 2a00:1450:4003:80f::2003:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53180 PA / Raw
+0003 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53180 > 2a00:1450:4003:80f::2003:https FA
+0004 Ether / IPv6 / TCP 2a00:1450:4003:80e::2003:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53179 FA
+0005 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53179 > 2a00:1450:4003:80e::2003:https A
+0006 Ether / IPv6 / TCP 2a00:1450:4003:80f::2003:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53180 FA
+0007 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53180 > 2a00:1450:4003:80f::2003:https A
+0008 Ether / IPv6 / ICMPv6ND_NS / ICMPv6 Neighbor Discovery Option - Source Link-Layer Address e0:19:54:60:29:70
+0009 Ether / IPv6 / ICMPv6ND_NA / ICMPv6 Neighbor Discovery Option - Destination Link-Layer Address 9c:2f:9d:53:cf:b7
+0010 Ether / IPv6 / TCP 2a04:4e42:200::649:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 PA / Raw
+0011 Ether / IPv6 / TCP 2a04:4e42:200::649:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 PA / Raw
+0012 Ether / IPv6 / TCP 2a04:4e42:200::649:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 FA
+0013 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 > 2a04:4e42:200::649:https A
+0014 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 > 2a04:4e42:200::649:https FA
+0015 Ether / IPv6 / TCP 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 > 2a04:4e42:200::649:https FA
+0016 Ether / IPv6 / TCP 2a04:4e42:200::649:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53067 A
+0017 Ether / IP / TCP 192.168.1.138:53163 > 34.160.164.47:https A / Raw
+0018 Ether / IP / TCP 34.160.164.47:https > 192.168.1.138:53163 A
+0019 Ether / IPv6 / TCP 2a04:4e42:1f::485:https > 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78:53078 PA / Raw
+>>> packet_list[17].show()
+###[ Ethernet ]###
+  dst= e0:19:54:60:29:70
+  src= 9c:2f:9d:53:cf:b7
+  type= IPv4
+###[ IP ]###
+     version= 4
+     ihl= 5
+     tos= 0x0
+     len= 41
+     id= 35384
+     flags= DF
+     frag= 0
+     ttl= 128
+     proto= tcp
+     chksum= 0xe794
+     src= 192.168.1.138
+     dst= 34.160.164.47
+     \options\
+###[ TCP ]###
+        sport= 53163
+        dport= https
+        seq= 444961569
+        ack= 3941789236
+        dataofs= 5
+        reserved= 0
+        flags= A
+        window= 512
+        chksum= 0xcc9c
+        urgptr= 0
+        options= []
+###[ Raw ]###
+           load= '\x00'
+
+>>> packet_list[18].show()
+###[ Ethernet ]###
+  dst= 9c:2f:9d:53:cf:b7
+  src= e0:19:54:60:29:70
+  type= IPv4
+###[ IP ]###
+     version= 4
+     ihl= 5
+     tos= 0x0
+     len= 52
+     id= 1181
+     flags=
+     frag= 0
+     ttl= 121
+     proto= tcp
+     chksum= 0xb425
+     src= 34.160.164.47
+     dst= 192.168.1.138
+     \options\
+###[ TCP ]###
+        sport= https
+        dport= 53163
+        seq= 3941789236
+        ack= 444961570
+        dataofs= 8
+        reserved= 0
+        flags= A
+        window= 277
+        chksum= 0x3c22
+        urgptr= 0
+        options= [('NOP', None), ('NOP', None), ('SAck', (444961569, 444961570))]
+
+>>> layer2 = ether()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[5], line 1
+----> 1 layer2 = ether()
+
+NameError: name 'ether' is not defined
+>>>
+>>> layer2 = Ether()
+>>> layer2.show()
+WARNING: Mac address to reach destination not found. Using broadcast.
+###[ Ethernet ]###
+  dst= ff:ff:ff:ff:ff:ff
+  src= 9c:2f:9d:53:cf:b7
+  type= 0x9000
+
+>>> layer3=IP()
+>>> layer3.show()
+###[ IP ]###
+  version= 4
+  ihl= None
+  tos= 0x0
+  len= None
+  id= 1
+  flags=
+  frag= 0
+  ttl= 64
+  proto= ip
+  chksum= None
+  src= 192.168.1.138
+  dst= 127.0.0.1
+  \options\
+
+>>> myIPv6=IPv6()
+>>> IPv6.show()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[11], line 1
+----> 1 IPv6.show()
+
+TypeError: Packet.show() missing 1 required positional argument: 'self'
+>>> myIPv6.show()
+###[ IPv6 ]###
+  version= 6
+  tc= 0
+  fl= 0
+  plen= None
+  nh= No Next Header
+  hlim= 64
+  src= 2a0c:5a85:6603:5b00:498a:c2a1:c0bc:1b78
+  dst= ::1
+
+>>> layer2=Ether(src="01:02:03:04:05:06")
+>>> layer2.show()
+WARNING: Mac address to reach destination not found. Using broadcast.
+###[ Ethernet ]###
+  dst= ff:ff:ff:ff:ff:ff
+  src= 01:02:03:04:05:06
+  type= 0x9000
+
+>>> layer3=IP(dst="192.168.1.249")
+>>> layer3.show()
+###[ IP ]###
+  version= 4
+  ihl= None
+  tos= 0x0
+  len= None
+  id= 1
+  flags=
+  frag= 0
+  ttl= 64
+  proto= ip
+  chksum= None
+  src= 192.168.1.138
+  dst= 192.168.1.249
+  \options\
+
+>>> send=sendp(layer2)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>>
+>>> send=sendp(layer2)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> send=sendp(layer2/layer3)
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> send=sendp(layer2/layer3/layer3/layer3)
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> send=sendp(layer2/layer3/layer2)
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+WARNING: Mac address to reach destination not found. Using broadcast.
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> layer4=TCP()
+>>> layer4.show()
+###[ TCP ]###
+  sport= ftp_data
+  dport= http
+  seq= 0
+  ack= 0
+  dataofs= None
+  reserved= 0
+  flags= S
+  window= 8192
+  chksum= None
+  urgptr= 0
+  options= []
+
+>>> send=sendp(layer2/layer3/layer4)
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> load_contrib('mpls')
+>>> mpls.show()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[26], line 1
+----> 1 mpls.show()
+
+NameError: name 'mpls' is not defined
+>>> MPLS().show()
+###[ MPLS ]###
+  label= 3
+  cos= 0
+  s= 1
+  ttl= 0
+
+>>> myMPLS=MPLS()
+>>> send=sendp(layer2/myMPLS/layer3/layer4)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> send=sendp(layer2/myMPLS/layer3/myMPLS/layer4)
+WARNING: Mac address to reach destination not found. Using broadcast.
+WARNING: No IP underlayer to compute checksum. Leaving null.
+.
+Sent 1 packets.
+>>> send=sendp(layer2/layer3/ICMP())
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+WARNING: Mac address to reach destination not found. Using broadcast.
+.
+Sent 1 packets.
+>>> sr1(IP(dst="52.53.232.80")/TCP(dport=80,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Finished sending 1 packets.
+...*
+Received 4 packets, got 1 answers, remaining 0 packets
+<IP  version=4 ihl=5 tos=0x0 len=44 id=0 flags=DF frag=0 ttl=41 proto=tcp chksum=0x7314 src=52.53.232.80 dst=192.168.1.138 |<TCP  sport=http dport=ftp_data seq=3733697370 ack=1 dataofs=6 reserved=0 flags=SA window=62727 chksum=0x3213 urgptr=0 options=[('MSS', 1452)] |>>
+>>> sr1(IP(dst="72.14.207.99")/TCP(dport=80,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+Finished sending 1 packets.
+......................................................................................................................................................
+Received 150 packets, got 0 answers, remaining 1 packets
+>>>
+>>> sr1(IP(dst="192.168.1.108")/TCP(dport=80,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+.....WARNING: Mac address to reach destination not found. Using broadcast.
+Finished sending 1 packets.
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Received 740 packets, got 0 answers, remaining 1 packets
+>>> sr1(IP(dst="79.116.209.124")/TCP(dport=50080,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+..Finished sending 1 packets.
+................................................................................................
+Received 98 packets, got 0 answers, remaining 1 packets
+>>>
+>>> sr1(IP(dst="72.14.207.99")/TCP(dport=80,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+Finished sending 1 packets.
+............
+Received 12 packets, got 0 answers, remaining 1 packets
+>>>
+>>> sr1(IP(dst="72.14.207.99")/TCP(dport=80,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+..Finished sending 1 packets.
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Received 1108 packets, got 0 answers, remaining 1 packets
+>>>
+>>> packet_list
+<Sniffed: TCP:18 UDP:0 ICMP:0 Other:2>
+>>> packet_list[18].show()
+###[ Ethernet ]###
+  dst= 9c:2f:9d:53:cf:b7
+  src= e0:19:54:60:29:70
+  type= IPv4
+###[ IP ]###
+     version= 4
+     ihl= 5
+     tos= 0x0
+     len= 52
+     id= 1181
+     flags=
+     frag= 0
+     ttl= 121
+     proto= tcp
+     chksum= 0xb425
+     src= 34.160.164.47
+     dst= 192.168.1.138
+     \options\
+###[ TCP ]###
+        sport= https
+        dport= 53163
+        seq= 3941789236
+        ack= 444961570
+        dataofs= 8
+        reserved= 0
+        flags= A
+        window= 277
+        chksum= 0x3c22
+        urgptr= 0
+        options= [('NOP', None), ('NOP', None), ('SAck', (444961569, 444961570))]
+
+>>> sr1(IP(dst="34.160.164.47")/TCP(dport=80,flags="S"))
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+Begin emission:
+C:\Users\eniko\anaconda3\Lib\site-packages\scapy\sendrecv.py:133: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  snd_thread.setDaemon(True)
+..Finished sending 1 packets.
+.*
+Received 4 packets, got 1 answers, remaining 0 packets
+<IP  version=4 ihl=5 tos=0x0 len=44 id=0 flags=DF frag=0 ttl=121 proto=tcp chksum=0x78ca src=34.160.164.47 dst=192.168.1.138 |<TCP  sport=http dport=ftp_data seq=642211703 ack=1 dataofs=6 reserved=0 flags=SAwindow=65535 chksum=0x8921 urgptr=0 options=[('MSS', 1412)] |>>
+>>>
